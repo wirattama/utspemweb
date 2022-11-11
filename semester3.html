@@ -1,0 +1,365 @@
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script><style>
+    @font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+    }
+    @font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+    }
+    body, html {
+    height: 100%;
+    font-family: sans-serif;
+    }
+    a {
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    }
+    a:focus {
+    outline: none !important;
+    }
+    a:hover {
+    text-decoration: none;
+    }
+    h1,h2,h3,h4,h5,h6 {margin: 0px;}
+    p {margin: 0px;}
+    ul, li {
+    margin: 0px;
+    list-style-type: none;
+    }
+    input {
+    display: block;
+    outline: none;
+    border: none;
+    }
+    textarea {
+    display: block;
+    outline: none;
+    }
+    textarea:focus, input:focus {
+    border-color: transparent;
+    }
+    button {
+    outline: none;
+    border: none;
+    background: transparent;
+    }
+    button:hover {
+    cursor: pointer;
+    }
+    iframe {
+    border: none;
+    }
+    .limiter {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .container-table100 {
+    width: 100%;
+    min-height: 100vh;
+    background: #d1d1d1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px;
+    }
+    .wrap-table100 {
+    width: 1300px;
+    }
+    table {
+    width: 100%;
+    background-color: #fff;
+    }
+    th, td {
+    font-weight: unset;
+    padding-right: 10px;
+    }
+    .column100 {
+    width: 130px;
+    padding-left: 25px;
+    }
+    .column100.column1 {
+    width: 265px;
+    padding-left: 42px;
+    }
+    .row100.head th {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    }
+    .row100 td {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    }
+    .table100.ver1 td {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1.4;
+    }
+    .table100.ver1 th {
+    font-family: Montserrat-Medium;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #36304a;
+    }
+    .table100.ver1 .row100:hover {
+    background-color: #f2f2f2;
+    }
+    .table100.ver1 .hov-column-ver1 {
+    background-color: #f2f2f2;
+    }
+    .table100.ver1 .hov-column-head-ver1 {
+    background-color: #484848;
+    }
+    .table100.ver1 .row100 td:hover {
+    background-color: #303453;
+    color: #fff;
+    }</style>
+    
+    
+    <title>Self Profile-Semester3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header" class="header d-flex align-items-center">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        
+              <a href="index.html" class="logo d-flex align-items-center">
+                <h1>MW<span>.</span></h1>
+              </a>
+        
+              <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+              <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+              <nav id="navbar" class="navbar">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aktifitas.html">Aktivitas</a></li>
+                  <li><a href="pendidikan.html">Pendidikan</a></li>
+                  <li><a href="portofolio.html">Portofolio</a></li>
+                  <li class="dropdown"><a href="#"class="active"><span>Jadwal Kuliah</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                      <li><a href="semester1.html">Semester 1</a></li>
+                      <li><a href="semester2.html">Semester 2</a></li>
+                      <li><a href="semester3.html">Semester 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav><!-- .navbar -->
+        
+            </div>
+        </header>
+        <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/bg.png');">
+            <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+      
+              <h2>Jadwal Kuliah Semester 3</h2>
+              <ol>
+                <li><a href="index.html">Home</a></li>
+              </ol>
+      
+            </div>
+          </div>
+    <div class="limiter"data-aos="fade-up" data-aos-delay="200">
+    <div class="container-table100">
+    <div class="wrap-table100">
+    <div class="table100 ver1 m-b-110">
+    <table data-vertable="ver1">
+    <thead>
+    <tr class="row100 head">
+    <th class="column100 column1" data-column="column1"></th>
+    <th class="column100 column2" data-column="column2">Sunday</th>
+    <th class="column100 column3" data-column="column3">Monday</th>
+    <th class="column100 column4" data-column="column4">Tuesday</th>
+    <th class="column100 column5" data-column="column5">Wednesday</th>
+    <th class="column100 column6" data-column="column6">Thursday</th>
+    <th class="column100 column7" data-column="column7">Friday</th>
+    <th class="column100 column8" data-column="column8">Saturday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Pemrograman Objek</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">08.00 AM</td>
+    <td class="column100 column4" data-column="column4">--</td>
+    <td class="column100 column5" data-column="column5">--</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Struktur Data</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">10.00 AM</td>
+    <td class="column100 column4" data-column="column4">--</td>
+    <td class="column100 column5" data-column="column5">--</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Sistem Multimedia</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">01.00 PM</td>
+    <td class="column100 column4" data-column="column4">--</td>
+    <td class="column100 column5" data-column="column5">--</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Pemrograman Web</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">--</td>
+    <td class="column100 column4" data-column="column4">08.00 AM</td>
+    <td class="column100 column5" data-column="column5">--</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Teknik Digital</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">--</td>
+    <td class="column100 column4" data-column="column4">01.00 PM</td>
+    <td class="column100 column5" data-column="column5">--</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Pemrosesan Data Terdistribusi</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">--</td>
+    <td class="column100 column4" data-column="column4">--</td>
+    <td class="column100 column5" data-column="column5">08.00 AM</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Sistem Operasi</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">--</td>
+    <td class="column100 column4" data-column="column4">--</td>
+    <td class="column100 column5" data-column="column5">10.00 AM</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+    <td class="column100 column1" data-column="column1">Komunikasi Data</td>
+    <td class="column100 column2" data-column="column2">--</td>
+    <td class="column100 column3" data-column="column3">--</td>
+    <td class="column100 column4" data-column="column4">--</td>
+    <td class="column100 column5" data-column="column5">01.00 PM</td>
+    <td class="column100 column6" data-column="column6">--</td>
+    <td class="column100 column7" data-column="column7">--</td>
+    <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+        <td class="column100 column1" data-column="column1">Manajemen Teknik</td>
+        <td class="column100 column2" data-column="column2">--</td>
+        <td class="column100 column3" data-column="column3">--</td>
+        <td class="column100 column4" data-column="column4">--</td>
+        <td class="column100 column5" data-column="column5">--</td>
+        <td class="column100 column6" data-column="column6">10.00 AM</td>
+        <td class="column100 column7" data-column="column7">--</td>
+        <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+        <td class="column100 column1" data-column="column1">Basis Data</td>
+        <td class="column100 column2" data-column="column2">--</td>
+        <td class="column100 column3" data-column="column3">--</td>
+        <td class="column100 column4" data-column="column4">--</td>
+        <td class="column100 column5" data-column="column5">--</td>
+        <td class="column100 column6" data-column="column6">01.00 PM</td>
+        <td class="column100 column7" data-column="column7">--</td>
+        <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    <tr class="row100">
+        <td class="column100 column1" data-column="column1">Expert System</td>
+        <td class="column100 column2" data-column="column2">--</td>
+        <td class="column100 column3" data-column="column3">--</td>
+        <td class="column100 column4" data-column="column4">--</td>
+        <td class="column100 column5" data-column="column5">--</td>
+        <td class="column100 column6" data-column="column6">--</td>
+        <td class="column100 column7" data-column="column7">03.00 PM</td>
+        <td class="column100 column8" data-column="column8">--</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="preloader"></div>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script type="text/javascript">
+    (function ($) {
+    "use strict";
+    $('.column100').on('mouseover',function(){
+    var table1 = $(this).parent().parent().parent();
+    var table2 = $(this).parent().parent();
+    var verTable = $(table1).data('vertable')+"";
+    var column = $(this).data('column') + "";
+    $(table2).find("."+column).addClass('hov-column-'+ verTable);
+    $(table1).find(".row100.head ."+column).addClass('hov-column-head-'+ verTable);
+    });
+    $('.column100').on('mouseout',function(){
+    var table1 = $(this).parent().parent().parent();
+    var table2 = $(this).parent().parent();
+    var verTable = $(table1).data('vertable')+"";
+    var column = $(this).data('column') + "";
+    $(table2).find("."+column).removeClass('hov-column-'+ verTable);
+    $(table1).find(".row100.head ."+column).removeClass('hov-column-head-'+ verTable);
+    });
+    })(jQuery);</script></body></html>
